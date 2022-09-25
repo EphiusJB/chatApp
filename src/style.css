@@ -1,0 +1,424 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+}
+
+.header{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 999;
+    font-size: xx-large;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 10px grey;
+}
+.lable{
+    width: 30%;
+    border-style: solid;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.space{
+    padding: 15px;
+}
+
+.main{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.friendList{
+    width: 30%;
+    height: 450px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 70px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px grey, 0 -3px 5px grey;
+}
+.Search{
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    height: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    display: flex;
+    
+}
+#search{
+    background-image: url("images/search.PNG");
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 98%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: transparent;
+    cursor: pointer;
+    align-self: auto;
+}
+.srch{
+    width: 90%;
+    height: 90%;
+    border-style: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: transparent;
+    text-align: center;
+    color: black;
+}
+.tabs{
+    margin-top: 15px;
+    width: 95%;
+    height: 35px;
+    display: flex;
+    align-content: space-between;
+}
+
+.Chat{
+    background-color:#e3e3e3;
+    width: 39%;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: auto;
+    padding: 4px 0px 4px 0px;
+    box-shadow: 0 5px 5px lightgrey;
+    box-shadow: 0 5px 5px lightgrey, 0 -5px 5px lightgrey;
+    cursor: pointer;
+}
+.Group{
+    background-color: transparent;
+    width: 39%;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: auto;
+    padding: 4px 0px 4px 0px;
+    box-shadow: 0 5px 5px lightgrey, 0 -5px 5px lightgrey;
+    cursor: pointer;
+}
+.List{
+    margin-top: 8px;
+    /*border-style: solid;*/
+    border-width: 2px;
+    width: 98%;
+    height: 77.5%;
+    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    overflow-y: scroll;
+    
+}
+.List::-webkit-scrollbar{
+    width: 10px;
+}
+.List:hover::-webkit-scrollbar-track{
+    background: none;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
+.List:hover::-webkit-scrollbar-thumb{
+    background: lightgrey;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+.item{
+    margin-top: 5px;
+    height: 17%;
+    display: flex;
+    align-content: space-between;
+    cursor: default;
+}
+.item:hover{
+    background-color: #e3e3e3;
+}
+.picture{
+    width: 45px;
+    height: 45px;
+    border-width: 1px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 6px;
+    background-image: url("images/picz/3D-Wallpaper-1_10soLZI.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+}
+.detz{
+    border-width: 1px;
+    width: fit-content;
+    max-width: 65%;
+    margin-left: 10px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    
+    border-width: 1px;
+    width: 85%;
+    height: 35%;
+    margin-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: small;
+}
+.preview{
+    border-width: 1px;
+    width: 95%;
+    height: 35%;
+    margin-top: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+}
+
+.chatbox{
+    width: 65%;
+    height: 450px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 70px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px grey, 0 -3px 5px grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar{
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    border-top-right-radius: 20px;
+    box-shadow: 0 5px 5px lightgrey;
+    display: flex;
+}
+.pikcha{
+    width: 35px;
+    height: 35px;
+    border-width: 1px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-image: url("images/picz/3d-music--854x960.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 4px black, -1px -1px 4px black;
+}
+.uzaname{
+    margin-left: 8px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.theName{
+    margin-left: 0px;
+    width: 80%;
+    height: 40%;
+    margin-top: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.activeState{
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    width: 7px;
+    height: 7px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-left: 2px;
+    background-color: aqua;
+}
+.optionz{
+    width: 80px;
+    align-self: right;
+    margin-right: 4px;
+}
+
+.grouped{
+    height: 50%;
+    margin-top: 6px;
+    display: flex;
+    align-content: space-around;
+}
+.call{
+    margin-right: 5px;
+    margin-top: 1px;
+    width: 40%;
+    background-image: url("images/phone\ dark.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.video{
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-right: 1px;
+    width: 40%;
+    background-image: url("images/video\ dark.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.menu{
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 10%;
+    height: 30px;
+    margin-right: 0%;
+    position: fixed;
+    align-self: flex-end;
+    border-top-right-radius: 20px;
+    background-image: url("images/menu.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.thechat{
+    height: 77%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+.thechat::-webkit-scrollbar{
+    width: 10px;
+}
+.thechat:hover::-webkit-scrollbar-track{
+    background: none;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
+.thechat:hover::-webkit-scrollbar-thumb{
+    background: lightgrey;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.messageR{
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    background-color: #e3e3e3;
+    box-shadow: 1px 1px 4px grey, -1px -1px 4px grey;
+    width: fit-content;
+    max-width: 57%;
+    font-size: smaller;
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.messageS{
+    border-radius: 7px;
+    border-top-right-radius: 0px;
+    box-shadow: 1px 1px 4px grey, -1px -1px 4px grey;
+    width: fit-content;
+    max-width: 57%;
+    font-size: smaller;
+    margin-right: 3%;
+    padding: 5px;
+    align-self: flex-end;
+    float: right;
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.replyBox{
+    height: 8%;
+    padding: 6px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px -1px 4px grey;
+}
+.textbox{
+    width: 80%;
+    display: flex;
+}
+.imge{
+    width: 25px;
+    height: 25px;
+    background-image: url("images/imge.PNG");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    padding: 1px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+.clip{
+    width: 25px;
+    height: 29px;
+    background-image: url("images/clip.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1px;
+    margin-left: 5px;
+}
+.reply{
+    width: 80%;
+    height: 25px;
+    margin-top: 3px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sendButton{
+    width: 30px;
+    height: 30px;
+    background-image: url("images/send.PNG");
+    background-size: contain;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin-top: -28px;
+    float: right;
+    margin-right: 5%;
+    box-shadow: 1px 1px 4px grey, -1px -1px 4px grey;
+}
+
+.imge:active{
+    filter: brightness(90%);
+}
+.clip:active{
+    filter: brightness(90%);
+}
+.sendButton:active{
+    filter: brightness(85%);
+}
