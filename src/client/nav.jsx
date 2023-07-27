@@ -1,4 +1,5 @@
 import './styling/nav.css';
+import pic1 from './styling/images/Pictures/2.jpg';
 
 function Nav() {
   return (
@@ -16,9 +17,9 @@ function Nav() {
 
           {/* Tile for the chats list, should be looped */}
           <div className="chatTile">
-            <img src="" alt="" className='chatIcon'/>
+            <img src={pic1} alt="" className='chatIcon'/>
             <div className="chatDetz">
-              <div className="usersName"> A User</div>
+              <div className="usersName">User A</div>
               <div className="lastText">The last sent text</div>
             </div>
           </div>
